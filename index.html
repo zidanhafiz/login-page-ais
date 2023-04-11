@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIS Login Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;600;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-page">
+        <img src="img/logo.jpg" class="logo" />
+        <h2>Masuk</h2>
+        <p class="username-form">
+          <label>Nomor Induk Mahasiswa / Email<span class="wrong-submit d-none"> !</span></label
+          ><br />
+          <input type="text" placeholder="email@example.com" class="input-username" />
+        </p>
+        <p class="password-form">
+          <label>Kata Sandi<span class="wrong-submit d-none"> !</span></label
+          ><br />
+          <input type="password" placeholder="kata sandi" class="input-password" />
+        </p>
+        <p class="rememberMe-form">
+          <input type="checkbox" class="checkbox-rememberMe" />
+          <label>Ingat Selalu</label>
+        </p>
+        <p class="forgot-password">
+          <a href="">Lupa Kata Sandi ?</a>
+        </p>
+        <p>
+          <span class="wrong-submit d-none">*Email atau kata sandi anda salah!</span>
+        </p>
+        <input type="submit" value="Masuk" class="submit-button" onclick="buttonClick()" />
+      </div>
+      <div class="image-page"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
